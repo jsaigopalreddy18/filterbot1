@@ -56,7 +56,7 @@ async def start(client, message):
              InlineKeyboardButton('Group', url='https://t.me/+2It7LrKjxi5hZjll')
             ]]
             reply_markup = InlineKeyboardMarkup(buttons)
-            return await message.reply(script.USER_START_TXT, reply_markup=reply_markup)
+            return await message.reply(script.USER_START_TXT..format(mention = message.from_user.mention), reply_markup=reply_markup)
         buttons = [[
                     InlineKeyboardButton('⤬ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ ⤬', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
                 ],[
