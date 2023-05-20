@@ -52,6 +52,8 @@ async def start(client, message):
     if len(message.command) != 2:
         if message.from_user.id not in ADMINS:
             buttons = [[
+             InlineKeyboardButton('⤬ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ ⤬', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+             ],[
              InlineKeyboardButton('Channel', url='https://t.me/ALLNEWMOVIEZSCOM'),
              InlineKeyboardButton('Group', url='https://t.me/+2It7LrKjxi5hZjll')
             ]]
