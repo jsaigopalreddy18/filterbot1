@@ -1,4 +1,7 @@
 class script(object):
+    USER_START_TXT = """𝙷𝙴𝙻𝙻𝙾 {mention}!!
+𝑰'𝒎 𝑾𝑶𝑹𝑲𝑰𝑵𝑮 𝑭𝑶𝑹 @Film_ClubGroup  𝑰 𝑪𝑨𝑵 𝑷𝑹𝑶𝑽𝑰𝑫𝑬 𝑴𝑶𝑽𝑰𝑬𝑺 & 𝑺𝑬𝑹𝑰𝑬𝑺, 𝑱𝑶𝑰𝑵 𝑶𝑼𝑹 𝑮𝑹𝑶𝑼𝑷𝑺 & 𝑬𝑵𝑱𝑶𝒀 😍 𝐒𝐔𝐁𝐒𝐂𝐑𝐈𝐁𝐄 𝐂𝐇𝐀𝐍𝐍𝐄𝐋 𝐅𝐎𝐑 𝐌𝐎𝐑𝐄 𝐔𝐏𝐃𝐀𝐓𝐄𝐒 😎😎😁"""
+    
     START_TXT = """<b>Hᴇʟʟᴏ {},
 Mʏ Nᴀᴍᴇ Is <a href=https://t.me/{}>{}</a>, I Cᴀɴ Pʀᴏᴠɪᴅᴇ Mᴏᴠɪᴇs, Jᴜsᴛ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ Aɴᴅ Eɴᴊᴏʏ 😍</b>"""
 
