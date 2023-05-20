@@ -50,7 +50,7 @@ async def start(client, message):
         await db.add_user(message.from_user.id, message.from_user.first_name)
         await client.send_message(LOG_CHANNEL, script.LOG_TEXT_P.format(message.from_user.id, message.from_user.mention))
     if len(message.command) != 2:
-        if message.from_user.id not in ADMINS:
+        if not message.from_user.id in ADMINS:
             buttons = [[
              InlineKeyboardButton('⤬ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ ⤬', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
              ],[
@@ -58,7 +58,8 @@ async def start(client, message):
              InlineKeyboardButton('Group', url='https://t.me/+2It7LrKjxi5hZjll')
             ]]
             reply_markup = InlineKeyboardMarkup(buttons)
-            return await message.reply(script.USER_START_TXT..format(mention = message.from_user.mention), reply_markup=reply_markup)
+            await message.reply(script.USER_START_TXT..format(mention = message.from_user.mention), reply_markup=reply_markup)
+            return 
         buttons = [[
                     InlineKeyboardButton('⤬ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ ⤬', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
                 ],[
