@@ -52,13 +52,11 @@ async def start(client, message):
     if len(message.command) != 2:
         if message.from_user.id not in ADMINS:
             buttons = [[
-           #  InlineKeyboardButton('⤬ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ ⤬', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
-            # ],[
              InlineKeyboardButton('Channel', url='https://t.me/ALLNEWMOVIEZSCOM'),
              InlineKeyboardButton('Group', url='https://t.me/+2It7LrKjxi5hZjll')
             ]]
             reply_markup = InlineKeyboardMarkup(buttons)
-            await message.reply(script.USER_START_TXT.format(mention = message.from_user.mention), reply_markup=reply_markup)
+            await message.reply_photo(photo=random.choice(PICS), caption=script.USER_START_TXT.format(mention = message.from_user.mention), reply_markup=reply_markup)
             return 
         buttons = [[
                     InlineKeyboardButton('⤬ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ ⤬', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
